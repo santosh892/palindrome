@@ -1,23 +1,38 @@
+<script language="JavaScript">
 
+var nl = getNewLine()
 
-function checkPalindrome(string) {
+function getNewLine() {
+	var agent = navigator.userAgent
 
-   
-    const len = string.length;
+	if (agent.indexOf("Win") >= 0)
+		return "\r\n"
+	else
+		if (agent.indexOf("Mac") >= 0)
+			return "\r"
 
-    for (let i = 0; i < len / 2; i++) {
+ 	return "\r"
 
-        if (string[i] !== string[len - 1 - i]) {
-            return 'It is not a palindrome';
-        }
-    }
-    return 'It is a palindrome';
 }
 
+pagecode = 'print("Hello world")
+print(\'To check palindrome or not 👇👇\')
 
-const string = prompt('Enter a string: ');
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("The number is a palindrome!")
+else:
+    print("The number isn\'t a palindrome!")
 
+    
+    print(\'created by santosh chhetri\')'
 
-const value = checkPalindrome(string);
+document.write(pagecode);
 
-console.log(value);
+</script>
